@@ -4,106 +4,217 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>João Vitor Mayolli Alves - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
     }
+
     header {
-      background-color: #222;
-      color: white;
-      padding: 2rem;
       text-align: center;
-    }
-    header h1 { margin: 0; font-size: 2rem; }
-    header p { margin: 0.5rem 0; }
-    .container {
-      max-width: 900px;
-      margin: auto;
       padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
     }
-    h2 {
-      color: #333;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
+
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #00d4ff;
       margin-bottom: 1rem;
     }
-    .botao {
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+
+    .download-button {
       display: inline-block;
       margin-top: 1rem;
-      padding: 0.7rem 1.2rem;
-      background-color: #007bff;
-      color: white;
+      padding: 0.7rem 1.5rem;
+      background-color: #00d4ff;
+      color: #000;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 30px;
+      transition: 0.3s;
     }
+
+    .download-button:hover {
+      background-color: #00a8cc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+    }
+
+    .sidebar, .main {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #00d4ff;
+      border-bottom: 2px solid #00d4ff33;
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #eee;
+      background-color: rgba(255, 255, 255, 0.05);
       margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="perfil.jpg" alt="Foto de João Vitor">
     <h1>João Vitor Mayolli Alves</h1>
     <p>Email: joaomayolli@icloud.com | Celular: (18) 99652-9725</p>
-    <a class="botao" href="curriculo.pdf" download>📄 Baixar Currículo em PDF</a>
+    <a class="download-button" href="curriculo.pdf" download>📄 Baixar Currículo em PDF</a>
   </header>
 
   <div class="container">
-    <h2>Resumo Profissional</h2>
-    <p>
-      Profissional de Infraestrutura de TI com mais de 8 anos de experiência em ambientes corporativos, especializado em servidores Linux e Windows Server, virtualização (Hyper-V e VMware), redes estruturadas, Active Directory, firewalls e cloud computing. Com forte atuação em suporte a sistemas ERP, help desk (GLPI), administração de bancos de dados Oracle e MySQL, além de experiência em automação de processos com soluções web. Foco em estabilidade, segurança e disponibilidade de serviços de TI.
-    </p>
+    <div class="sidebar">
+      <h2>Resumo</h2>
+      <p>
+        Profissional de Infraestrutura de TI com mais de 8 anos de experiência em ambientes corporativos, especializado em servidores Linux e Windows Server, virtualização (Hyper-V e VMware), redes estruturadas, Active Directory, firewalls e cloud computing. Forte atuação em suporte a sistemas ERP, help desk (GLPI), administração de bancos de dados Oracle e MySQL e automação de processos com soluções web.
+      </p>
 
-    <h2>Experiência Profissional</h2>
-    <ul>
-      <li><strong>PAIXÃO DO COUTO TRANSPORTES LTDA</strong><br>
-      Cargo: Analista de TI – R$ 3.246,39<br>
-      Período: 31/08/2023 – 14/05/2025</li>
+      <h2>Competências Técnicas</h2>
+      <ul>
+        <li>Servidores Linux e Windows Server</li>
+        <li>Virtualização com Hyper-V e VMware</li>
+        <li>Redes corporativas, VLAN, roteamento, IP</li>
+        <li>Fibra óptica, Wi-Fi, VoIP</li>
+        <li>Active Directory, GPOs, controle de acesso</li>
+        <li>Firewall e regras NAT</li>
+        <li>Cloud Computing</li>
+        <li>Banco de Dados Oracle e MySQL</li>
+        <li>GLPI – implantação e automação de chamados</li>
+        <li>Soluções web para suporte técnico</li>
+        <li>Servidores Web – criação e manipulação</li>
+      </ul>
+    </div>
 
-      <li><strong>IBÉRIA INDUSTRIAL E COMERCIAL LTDA</strong><br>
-      Cargo: Analista de Sistemas Jr – R$ 3.154,86<br>
-      Período: 08/04/2021 – 28/08/2023</li>
+    <div class="main">
+      <h2>Experiência Profissional</h2>
+      <ul>
+        <li>
+          <strong>OLIVER SOLUTIONS LTDA</strong><br>
+          Cargo: Analista de TI – R$ 3.246,39<br>
+          Período: 31/08/2023 – 14/05/2025
+        </li>
+        <li>
+          <strong>IBÉRIA INDUSTRIAL E COMERCIAL LTDA</strong><br>
+          Cargo: Analista de Sistemas Jr – R$ 3.154,86<br>
+          Período: 08/04/2021 – 28/08/2023
+        </li>
+        <li>
+          <strong>CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</strong><br>
+          Cargo: Técnico em Infraestrutura I – R$ 1.920,25<br>
+          Período: 01/04/2020 – 07/04/2021
+        </li>
+        <li>
+          <strong>SOCIEDADE AGRÍCOLA VALE DO CRISTAL S/A</strong><br>
+          Cargo: Auxiliar de Operador de VANTs – R$ 1.725,15<br>
+          Período: 18/01/2018 – 31/03/2020
+        </li>
+      </ul>
 
-      <li><strong>CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</strong><br>
-      Cargo: Técnico em Infraestrutura I – R$ 1.920,25<br>
-      Período: 01/04/2020 – 07/04/2021</li>
+      <h2>Empresas em que Atuei</h2>
 
-      <li><strong>SOCIEDADE AGRÍCOLA VALE DO CRISTAL S/A</strong><br>
-      Cargo: Auxiliar de Operador de VANTs – R$ 1.725,15<br>
-      Período: 18/01/2018 – 31/03/2020</li>
-    </ul>
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <img src="oliver.png" alt="Logo Paixão do Couto" style="width: 60px; height: 60px; object-fit: contain;">
+        <div>
+          <strong>OLIVER SOLUTIONS LTDA</strong><br>
+          <a href="https://www.oliversolutions.com.br" target="_blank" style="color:#00d4ff;">www.oliversolutions.com.br</a>
+          <p style="margin: 0.5rem 0;">
+            Empresa especializada em transporte de passageiros.
+          </p>
+        </div>
+      </div>
 
-    <h2>Competências Técnicas</h2>
-    <ul>
-      <li>Administração completa de servidores Linux e Windows Server</li>
-      <li>Virtualização com Hyper-V e VMware</li>
-      <li>Gerenciamento de redes (VLAN, IP, roteamento, fibra óptica, redes sem fio, VoIP)</li>
-      <li>Administração de Active Directory, GPOs e controle de acesso</li>
-      <li>Gerenciamento de firewalls e regras de segurança</li>
-      <li>Cloud computing e soluções em nuvem</li>
-      <li>Administração de bancos Oracle e MySQL</li>
-      <li>Suporte a sistemas ERP e usuários</li>
-      <li>GLPI: instalação, configuração, automação de chamados</li>
-      <li>Criação de soluções web para automação de suporte</li>
-      <li>Servidores web: configuração e gerenciamento</li>
-    </ul>
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <img src="logo_iberia.png" alt="Logo Ibéria" style="width: 60px; height: 60px; object-fit: contain;">
+        <div>
+          <strong>IBÉRIA INDUSTRIAL E COMERCIAL LTDA</strong><br>
+          <a href="https://www.iberia.com.br" target="_blank" style="color:#00d4ff;">www.iberia.com.br</a>
+          <p style="margin: 0.5rem 0;">
+            Indústria, cultivo de cana-de-açúcar e fabricação de açúcar e álcool.
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <img src="logo_cs.png" alt="Logo CS Treinamento" style="width: 60px; height: 60px; object-fit: contain;">
+        <div>
+          <strong>CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</strong><br>
+          <a href="https://www.cscompusoftware.com.br" target="_blank" style="color: #00d4ff;">www.cscompusoftware.com.br</a>
+          <p style="margin: 0.5rem 0;">
+            Empresa comprometida com o desenvolvimento de sistemas de gestão de negócios inovadores e eficientes, ajudando empresas de diversos setores a alcançarem desempenho superior.
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <img src="logo_vale.png" alt="Logo Vale do Cristal" style="width: 60px; height: 60px; object-fit: contain;">
+        <div>
+          <strong>SOCIEDADE AGRÍCOLA VALE DO CRISTAL S/A</strong><br>
+          <span style="color:#00d4ff;">(Site não disponível)</span>
+          <p style="margin: 0.5rem 0;">
+            Produtora agrícola voltada ao cultivo e monitoramento de grandes áreas, com uso de tecnologia de drones e VANTs em suas operações.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer>
-    &copy; 2025 João Vitor Mayolli Alves - itcloudsolutions.com.br
+    &copy; 2025 João Vitor Mayolli Alves – itcloudsolutions.com.br
   </footer>
 
 </body>
