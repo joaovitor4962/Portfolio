@@ -1,375 +1,371 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>João Vitor Mayolli Alves - Portfólio</title>
-  <meta name="description" content="Portfólio profissional de João Vitor Mayolli Alves – Especialista em Infraestrutura de TI, Linux, Windows Server, Redes, Banco de Dados e Suporte Técnico.">
-  <meta name="author" content="João Vitor Mayolli Alves">
-  <meta name="keywords" content="Infraestrutura de TI, Linux, Windows Server, GLPI, Oracle, MySQL, pfSense, Redes, AD, Suporte Técnico, Portfólio TI">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0d1b24, #1c3745, #2a4e61);
-      color: #f0f0f0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Vitor Mayolli Alves - Desenvolvedor Front-end</title>
+    <meta name="description"
+        content="Desenvolvedor Front-end especializado em JavaScript, React, Vue.js e tecnologias web modernas. Experiência em infraestrutura de TI e desenvolvimento de soluções completas.">
+    <meta name="author" content="João Vitor Mayolli Alves">
+    <meta name="keywords"
+        content="Desenvolvedor Front-end, JavaScript, React, Vue.js, HTML5, CSS3, Bootstrap, Infraestrutura TI, Full Stack">
 
-    header {
-      text-align: center;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.3);
-      position: relative;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(10px);
-    }
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-    header img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #00d4ff;
-      margin-bottom: 1rem;
-      transition: width 0.3s ease, height 0.3s ease;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin: 0.3rem 0;
-      font-size: 1rem;
-    }
-
-    .download-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.7rem 1.5rem;
-      background-color: #00d4ff;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: background-color 0.3s;
-    }
-
-    .download-button:hover {
-      background-color: #00a8cc;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 2rem;
-    }
-
-    .sidebar, .main {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
-      border-radius: 10px;
-    }
-
-    .cursos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin: 1rem 0 2rem 0;
-    }
-
-    .curso-card {
-      background-color: rgba(255, 255, 255, 0.07);
-      padding: 1rem;
-      border-radius: 8px;
-      border-left: 4px solid #00d4ff;
-      transition: transform 0.3s ease;
-    }
-
-    .curso-card:hover {
-      transform: scale(1.03);
-    }
-
-    .curso-card strong {
-      font-size: 1.1rem;
-      color: #00d4ff;
-    }
-
-    h2 {
-      color: #00d4ff;
-      border-bottom: 2px solid #00d4ff33;
-      padding-bottom: 0.5rem;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1rem;
-    }
-
-    li {
-      margin-bottom: 0.8rem;
-    }
-
-    .main > div {
-      margin-bottom: 1.8rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.05);
-      margin-top: 2rem;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-
-      header img {
-        width: 100px;
-        height: 100px;
-      }
-
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      header p {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
 </head>
+
 <body>
-
-  <header>
-    <img src="perfil.jpg" alt="Foto de João Vitor">
-    <h1>João Vitor Mayolli Alves</h1>
-    <p>Email: joaomayolli@icloud.com | Celular: (18) 99652-9725</p>
-    <a class="download-button" href="curriculo.pdf" download>📄 Baixar Currículo em PDF</a>
-  </header>
-
-  <div class="container">
-    <div class="sidebar">
-      <h2>Resumo</h2>
-      <p>
-        Profissional de Infraestrutura de TI com mais de 8 anos de experiência em ambientes corporativos, especializado em servidores Linux e Windows Server, virtualização (Hyper-V e VMware), redes estruturadas, Active Directory, firewalls e cloud computing. Forte atuação em suporte a sistemas ERP, help desk (GLPI), administração de bancos de dados Oracle e MySQL e automação de processos com soluções web.
-      </p>
-
-      <h2>Competências Técnicas</h2>
-      <ul>
-        <li>Administração de servidores Linux e Windows Server</li>
-        <li>Virtualização com Hyper-V e VMware</li>
-        <li>Gerenciamento de redes corporativas, VLANs, roteamento e endereçamento IP</li>
-        <li>Infraestrutura de fibra óptica, redes Wi-Fi corporativas e sistemas VoIP</li>
-        <li>Gerenciamento de Active Directory, GPOs e controle de acesso</li>
-        <li>Configuração de firewalls e regras de NAT</li>
-        <li>Experiência em soluções de Cloud Computing</li>
-        <li>Administração de bancos de dados Oracle e MySQL/MariaDB</li>
-        <li>Implantação e automação de chamados via GLPI</li>
-        <li>Desenvolvimento e manutenção de soluções web para suporte técnico</li>
-        <li>Criação e administração de servidores web</li>
-        <li>Instalação e configuração de sistemas VoIP</li>
-        <li>Instalação e gerenciamento de sistemas de CFTV</li>
-        <li>Videomonitoramento com DVR, NVR e câmeras IP</li>
-        <li>Integração de sistemas de CFTV com redes e servidores</li>
-        <li>Agendamento de cópias de segurança com Cobian Backup em servidores e estações</li>
-        <li>Gerenciamento de soluções de backup corporativo com Veeam Backup & Replication</li>
-        <li>Administração de storages NAS QNAP, volumes, permissões e compartilhamentos SMB/NFS</li>
-        <li>Montagem, manutenção e formatação de estações de trabalho e notebooks</li>
-        <li>Instalação e configuração de softwares corporativos (ERP, Office, antivírus etc.)</li>
-        <li>Configuração de impressoras de rede, multifuncionais e scanners</li>
-        <li>Automação de tarefas com scripts (batch, PowerShell, shell script)</li>
-        <li>Implantação e gerenciamento de VPNs site-to-site e client-to-site</li>
-        <li>Monitoramento de infraestrutura com Zabbix, Grafana e Nagios</li>
-      </ul>
-    </div>
-
-    <div class="main">
-      <h2>Experiência Profissional</h2>
-      <ul>
-        <li>
-          <strong>OLIVER SOLUTIONS LTDA</strong><br>
-          Cargo: Analista de TI<br>
-          Período: 08/2023 – 05/2025
-        </li>
-        <li>
-          <strong>IBÉRIA INDUSTRIAL E COMERCIAL LTDA</strong><br>
-          Cargo: Analista de Sistemas Jr<br>
-          Período: 04/2021 – 08/2023
-        </li>
-        <li>
-          <strong>CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</strong><br>
-          Cargo: Técnico em Infraestrutura I<br>
-          Período: 04/2020 – 04/2021
-        </li>
-        <li>
-          <strong>SOCIEDADE AGRÍCOLA VALE DO CRISTAL S/A</strong><br>
-          Cargo: Auxiliar de Operador de VANTs<br>
-          Período: 01/2018 – 03/2020
-        </li>
-      </ul>
-
-      <h2>Empresas em que Atuei</h2>
-
-      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-        <img src="oliver.png" alt="Logo Oliver Solutions" style="width: 60px; height: 60px; object-fit: contain;">
-        <div>
-          <strong>OLIVER SOLUTIONS LTDA</strong><br>
-          <a href="https://www.oliversolutions.com.br" target="_blank" style="color:#00d4ff;">www.oliversolutions.com.br</a>
-          <p style="margin: 0.5rem 0;">
-            Empresa especializada em transporte de passageiros.
-          </p>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">João Vitor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-        <img src="logo_iberia.png" alt="Logo Ibéria" style="width: 60px; height: 60px; object-fit: contain;">
-        <div>
-          <strong>IBÉRIA INDUSTRIAL E COMERCIAL LTDA</strong><br>
-          <a href="https://www.usinaiberia.com.br" target="_blank" style="color:#00d4ff;">www.iberia.com.br</a>
-          <p style="margin: 0.5rem 0;">
-            Indústria, cultivo de cana-de-açúcar e fabricação de açúcar e álcool.
-          </p>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">João Vitor Mayolli Alves</h1>
+                    <p class="hero-subtitle">Desenvolvedor Front-end & Especialista em Infraestrutura TI</p>
+                    <p class="mb-4">Transformando ideias em experiências digitais incríveis com código limpo e design
+                        moderno. Especialista em JavaScript e tecnologias web.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-primary-custom">
+                            <i class="bi bi-code-slash me-2"></i>Ver Projetos
+                        </a>
+                        <a href="curriculo.pdf" download class="btn btn-outline-custom">
+                            <i class="bi bi-download me-2"></i>Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <img src="perfil.jpg" alt="João Vitor" class="profile-img floating">
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="mailto:joaomayolli@icloud.com" class="text-decoration-none">
+                                <i class="bi bi-envelope-fill fs-3 text-info"></i>
+                            </a>
+                            <a href="tel:+5518996529725" class="text-decoration-none">
+                                <i class="bi bi-telephone-fill fs-3 text-info"></i>
+                            </a>
+                            <a href="https://site.itcloudsolutions.com.br/" target="_blank"
+                                class="text-decoration-none">
+                                <i class="bi bi-globe fs-3 text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-        <img src="logo_cs.png" alt="Logo CS Treinamento" style="width: 60px; height: 60px; object-fit: contain;">
-        <div>
-          <strong>CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</strong><br>
-          <a href="https://www.cscompusoftware.com.br" target="_blank" style="color: #00d4ff;">www.cscompusoftware.com.br</a>
-          <p style="margin: 0.5rem 0;">
-            Empresa comprometida com o desenvolvimento de sistemas de gestão de negócios inovadores e eficientes, ajudando empresas de diversos setores a alcançarem desempenho superior.
-          </p>
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-4">Sobre Mim</h2>
+                    <p class="lead">Desenvolvedor apaixonado por tecnologia com foco em criar soluções inovadoras</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card-custom p-5" data-aos="fade-up">
+                        <p class="fs-5 mb-4">
+                            Sou um <strong class="text-info">Desenvolvedor Front-end</strong> com mais de 8 anos de
+                            experiência em tecnologia,
+                            especializado em criar interfaces modernas e funcionais. Minha jornada começou na
+                            infraestrutura de TI,
+                            onde desenvolvi uma base sólida em sistemas, redes e servidores.
+                        </p>
+                        <p class="mb-4">
+                            Hoje, aplico essa experiência técnica no desenvolvimento front-end, criando aplicações web
+                            performáticas e escaláveis. Tenho expertise em <strong class="text-info">HTML, CSS,
+                                JavaScript, bancos de dados</strong>
+                            e tecnologias modernas de desenvolvimento web.
+                        </p>
+                        <p class="mb-0">
+                            Fundador da <strong class="text-info">IT Cloud Solutions</strong>, onde desenvolvo soluções
+                            completas
+                            para transformação digital, combinando conhecimento técnico em infraestrutura com
+                            desenvolvimento
+                            front-end de alta qualidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-        <img src="logo_vale.png" alt="Logo Vale do Cristal" style="width: 60px; height: 60px; object-fit: contain;">
-        <div>
-          <strong>SOCIEDADE AGRÍCOLA VALE DO CRISTAL S/A</strong><br>
-          <span style="color:#00d4ff;">(Site não disponível)</span>
-          <p style="margin: 0.5rem 0;">
-            Produtora agrícola voltada ao cultivo e monitoramento de grandes áreas, com uso de tecnologia de drones e VANTs em suas operações.
-          </p>
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-4">Habilidades Técnicas</h2>
+                    <p class="lead">Tecnologias e ferramentas que domino</p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-12 mb-4" data-aos="fade-up">
+                    <h3 class="text-center mb-4 text-info">Desenvolvimento Front-end</h3>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-item">
+                        <i class="bi bi-code-slash skill-icon"></i>
+                        <h5>JavaScript</h5>
+                        <p>ES6+, DOM, APIs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-item">
+                        <i class="bi bi-filetype-css skill-icon"></i>
+                        <h5>CSS3</h5>
+                        <p>Flexbox, Grid, Animations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-item">
+                        <i class="bi bi-bootstrap skill-icon"></i>
+                        <h5>Bootstrap</h5>
+                        <p>Responsive Design</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-item">
+                        <i class="bi bi-git skill-icon"></i>
+                        <h5>Git/GitHub</h5>
+                        <p>Controle de Versão</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="row">
+                <div class="col-lg-12 mb-4" data-aos="fade-up">
+                    <h3 class="text-center mb-4 text-info">Stack Tecnológico</h3>
+                </div>
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <div class="tech-item">HTML5</div>
+                    <div class="tech-item">CSS3</div>
+                    <div class="tech-item">JavaScript</div>
+                    <div class="tech-item">React</div>
+                    <div class="tech-item">Vue.js</div>
+                    <div class="tech-item">Bootstrap</div>
+                    <div class="tech-item">Node.js</div>
+                    <div class="tech-item">MySQL</div>
+                    <div class="tech-item">Oracle</div>
+                    <div class="tech-item">Linux</div>
+                    <div class="tech-item">Windows Server</div>
+                    <div class="tech-item">VMware</div>
+                    <div class="tech-item">Docker</div>
+                    <div class="tech-item">Git</div>
+                    <div class="tech-item">Figma</div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <h2>Descrição de Atividades</h2>
-
-      <div>
-        <strong>Virtualização</strong>
-        <p>
-          Instalação e administração do Hyper-V Server e VMWare, configurando servidores virtuais e replicações.
-        </p>
-      </div>
-
-      <div>
-        <strong>Servidores Linux</strong>
-        <p>
-          Responsável por toda a jornada de implantação de servidores Linux, desde a criação e configuração da máquina virtual (Hyper-V ou VMware), definição de recursos de hardware, até a instalação de distribuições como Debian, CentOS, Oracle Linux e Ubuntu Server.
-        </p>
-      </div>
-
-      <div>
-        <strong>Implantação e Administração de Windows Server</strong>
-        <p>
-          Instalação e promoção do Active Directory Domain Services (AD DS) com criação de domínios, unidades organizacionais (OUs), contas de usuários e grupos, aplicação de GPOs personalizadas para controle de desktop, segurança, mapeamento de unidades, scripts de logon e restrições de sistema.
-        </p>
-      </div>
-
-      <div>
-        <strong>Gerenciamento de Redes Corporativas, VLANs e Endereçamento IP</strong>
-        <p>
-          Atuação sólida na administração de redes corporativas de pequeno a grande porte, com foco em segmentação, desempenho e segurança. Responsável pelo planejamento, configuração e manutenção de infraestrutura de rede cabeada e sem fio, utilizando switches gerenciáveis, roteadores e access points corporativos.
-        </p>
-      </div>
-
-      <div>
-        <strong>Implantação e Gerenciamento de Firewalls (pfSense e Sophos)</strong>
-        <p>
-          Experiência prática com pfSense, desde a instalação bare-metal ou virtualizada, configuração inicial de interfaces WAN/LAN, criação de regras de firewall, NAT, VPN, port forwarding, aliases, VLANs e políticas de segurança personalizadas, e experiência com Sophos UTM/XG Firewall.
-        </p>
-      </div>
-
-      <div>
-        <strong>Administração de Banco de Dados Oracle e MySQL</strong>
-        <p>
-          No Oracle Database, realizo instalação e configuração de instâncias Oracle XE e Standard em ambientes Linux e Windows e comandos de performance. No MySQL/MariaDB, realizo criação de bancos e tabelas para aplicações web internas desenvolvidas sob demanda, como sistemas de controle, cadastros, e apontamentos.
-        </p>
-      </div>
-
-      <div>
-        <strong>Analista de Suporte</strong>
-        <p>
-          Atuação como Analista de Suporte de Nível 1, 2 e 3, prestando atendimento a usuários locais e remotos em ambientes corporativos, garantindo a disponibilidade e o funcionamento de sistemas, redes, estações e servidores.
-        </p>
-      </div>
-
-      <div>
-        <strong>Manutenção Preventiva e Corretiva de Equipamentos de Informática</strong>
-        <p>
-          Experiência prática na manutenção preventiva e corretiva de periféricos e equipamentos de informática, formatação e instalação do Windows, diagnóstico e correção de falhas em estações de trabalho, notebooks, monitores, impressoras, scanners, roteadores, switches e no-breaks. Limpeza física periódica e aplicação de boas práticas de conservação para prolongar a vida útil dos equipamentos e registro e controle de equipamentos no inventário do sistema.
-        </p>
-      </div>
-
-      <h2>Formações e Cursos</h2>
-      <div class="cursos-grid">
-        <div class="curso-card">
-          <strong>GRADUAÇÃO ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</strong>
-          <p> (INICIANDO) – 2025</p>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-4">Projetos</h2>
+                    <p class="lead">Alguns dos meus trabalhos mais recentes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-3">IT Cloud Solutions</h5>
+                            <p class="mb-3">Site corporativo desenvolvido para minha empresa de soluções em TI. Layout
+                                moderno, responsivo e focado na experiência do usuário.</p>
+                            <div class="mb-3">
+                                <span class="tech-item">HTML5</span>
+                                <span class="tech-item">CSS3</span>
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">Bootstrap</span>
+                            </div>
+                            <a href="https://site.itcloudsolutions.com.br/" target="_blank"
+                                class="btn btn-outline-custom btn-sm">
+                                <i class="bi bi-eye me-2"></i>Ver Projeto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-3">Customizações GLPI</h5>
+                            <p class="mb-3">Desenvolvimento de customizações e automações para sistemas de help desk
+                                GLPI, melhorando a experiência do usuário e produtividade.</p>
+                            <div class="mb-3">
+                                <span class="tech-item">PHP</span>
+                                <span class="tech-item">MySQL</span>
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">CSS3</span>
+                            </div>
+                            <span class="btn btn-outline-secondary btn-sm disabled">
+                                <i class="bi bi-lock me-2"></i>Projeto Corporativo
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="curso-card">
-          <strong>FIREWALL PFSENSE V2025 DO ZERO AO AVANÇADO</strong>
-          <p> 36% concluído – 2025</p>
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-4">Experiência Profissional</h2>
+                    <p class="lead">Minha jornada profissional em tecnologia</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline" data-aos="fade-up">
+                        <div class="timeline-item">
+                            <div class="card-custom p-4">
+                                <h5 class="fw-bold text-info">Analista de TI</h5>
+                                <h6 class="text-muted">OLIVER SOLUTIONS LTDA</h6>
+                                <p class="text-muted mb-2">08/2023 – 05/2025</p>
+                                <p>Desenvolvimento de soluções web internas, administração de infraestrutura de TI e
+                                    suporte técnico especializado.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="card-custom p-4">
+                                <h5 class="fw-bold text-info">Analista de Sistemas Jr</h5>
+                                <h6 class="text-muted">IBÉRIA INDUSTRIAL E COMERCIAL LTDA</h6>
+                                <p class="text-muted mb-2">04/2021 – 08/2023</p>
+                                <p>Administração de sistemas ERP, desenvolvimento de automações e gestão de banco de
+                                    dados Oracle.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="card-custom p-4">
+                                <h5 class="fw-bold text-info">Técnico em Infraestrutura I</h5>
+                                <h6 class="text-muted">CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</h6>
+                                <p class="text-muted mb-2">04/2020 – 04/2021</p>
+                                <p>Implementação de infraestrutura de TI, configuração de servidores e desenvolvimento
+                                    de soluções customizadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="curso-card">
-          <strong>DBA ORACLE: INCLUI GRID 21C & ORACLE 19C ORACLE LINUX</strong>
-          <p>  30% concluído – 2025</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-4">Entre em Contato</h2>
+                    <p class="lead">Vamos conversar sobre seu próximo projeto</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4" data-aos="fade-up">
+                            <div class="contact-item">
+                                <i class="bi bi-envelope-fill contact-icon"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Email</h6>
+                                    <a href="mailto:joaomayolli@icloud.com"
+                                        class="text-decoration-none text-light">joaomayolli@icloud.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-item">
+                                <i class="bi bi-telephone-fill contact-icon"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Telefone</h6>
+                                    <a href="tel:+5518996529725" class="text-decoration-none text-light">(18)
+                                        99652-9725</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-item">
+                                <i class="bi bi-geo-alt-fill contact-icon"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Localização</h6>
+                                    <span>Paraguaçu Paulista, SP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="contact-item">
+                                <i class="bi bi-globe contact-icon"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Website</h6>
+                                    <a href="https://site.itcloudsolutions.com.br/" target="_blank"
+                                        class="text-decoration-none text-light">itcloudsolutions.com.br</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="curso-card">
-          <strong>PROGRAMAÇÃO JAVASCRIPT</strong>
-          <p>   12% concluído – 2025</p>
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 João Vitor Mayolli Alves. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido com 💙 e muito ☕</p>
+                </div>
+            </div>
         </div>
+    </footer>
 
-        <div class="curso-card">
-          <strong>SAP</strong>
-          <p>   100% concluído – 2023</p>
-        </div>
-
-        <div class="curso-card">
-          <strong> DESENVOLVEDOR WEB</strong>
-          <p>   100% concluído – 2023</p>
-        </div>
-
-        <div class="curso-card">
-          <strong> LINUX COMPLETO + SERVIDORES</strong>
-          <p>   100% concluído – 2024</p>
-        </div>
-
-        <div class="curso-card">
-          <strong> ARQUITETURA DE REDES</strong>
-          <p>   100% concluído – 2024</p>
-        </div>
-      </div> 
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 João Vitor Mayolli Alves – itcloudsolutions.com.br
-  </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
