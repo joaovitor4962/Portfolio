@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-center" data-aos="fade-left">
-                    <img src="perfil.jpg" alt="João Vitor" class="profile-img floating">
+                    <img src="img/perfil.jpg" alt="João Vitor" class="profile-img floating">
                     <div class="mt-4">
                         <div class="d-flex justify-content-center gap-3">
                             <a href="mailto:joaomayolli@icloud.com" class="text-decoration-none">
@@ -141,28 +141,32 @@
                     <h3 class="text-center mb-4 text-info">Desenvolvimento Front-end</h3>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-item">
+                    <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
+                        onclick="setModalContent('JavaScript', 'img/javascript-logo.png', 'Linguagem de programação versátil e poderosa. Domino ES6+, manipulação do DOM, APIs REST, programação assíncrona e muito mais.')">
                         <i class="bi bi-code-slash skill-icon"></i>
                         <h5>JavaScript</h5>
                         <p>ES6+, DOM, APIs</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-item">
+                    <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
+                        onclick="setModalContent('CSS3', 'img/css-logo.png', 'Estilização avançada com CSS3. Uso Flexbox, Grid, animações, responsividade e técnicas modernas de layout.')">
                         <i class="bi bi-filetype-css skill-icon"></i>
                         <h5>CSS3</h5>
                         <p>Flexbox, Grid, Animations</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-item">
+                    <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
+                        onclick="setModalContent('Bootstrap', 'img/bootstrap-logo.png', 'Framework CSS para desenvolvimento rápido e responsivo. Experiência em customização e criação de componentes.')">
                         <i class="bi bi-bootstrap skill-icon"></i>
                         <h5>Bootstrap</h5>
                         <p>Responsive Design</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="skill-item">
+                    <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
+                        onclick="setModalContent('Git/GitHub', 'img/git-logo.png', 'Controle de versão e colaboração em projetos. Experiência com branches, merges, pull requests e workflows de desenvolvimento.')">
                         <i class="bi bi-git skill-icon"></i>
                         <h5>Git/GitHub</h5>
                         <p>Controle de Versão</p>
@@ -202,7 +206,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
             <div class="row">
@@ -253,7 +256,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="py-5">
         <div class="container">
             <div class="row">
@@ -298,7 +300,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
             <div class="row">
@@ -355,7 +356,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
@@ -368,6 +368,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="skillModal" tabindex="-1" aria-labelledby="skillModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="skillModalLabel">Skill</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalSkillImage" src="" alt="" class="img-fluid rounded mb-3" style="max-height: 300px;">
+                    <h4 id="modalSkillTitle" class="text-info mb-3"></h4>
+                    <p id="modalSkillDescription" class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

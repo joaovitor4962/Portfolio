@@ -168,3 +168,11 @@ document.querySelectorAll('.btn').forEach(btn => {
         }
     });
 });
+
+function setModalContent(title, imageSrc, description) {
+    document.getElementById('skillModalLabel').textContent = title;
+    document.getElementById('modalSkillTitle').textContent = title;
+    document.getElementById('modalSkillImage').src = imageSrc;
+    document.getElementById('modalSkillImage').alt = title;
+    document.getElementById('modalSkillDescription').textContent = description;
+}
