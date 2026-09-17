@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Vitor Mayolli Alves - Analista de Infraestrutura de TI</title>
+    <title>João Vitor Mayolli Alves - Analista de Infraestrutura e Sistemas</title>
     <meta name="description"
-        content="Analista de Infraestrutura de TI com mais de 8 anos de experiência em Linux, Windows Server, Redes, Virtualização, Cloud e Automação, com atuação complementar em Desenvolvimento Web.">
+        content="Analista de Infraestrutura e Sistemas Sênior. Especialista em Linux, Windows Server, Redes, Segurança, Banco de Dados, Automação Bash e Cloud.">
     <meta name="author" content="João Vitor Mayolli Alves">
     <meta name="keywords"
-        content="Analista de Infraestrutura de TI, Linux, Windows Server, Redes, Virtualização, VMware, Active Directory, pfSense, Veeam, Cloud, Automação, Desenvolvimento Web, JavaScript">
+        content="Analista de Infraestrutura, Linux, Windows Server, Redes, Virtualização, VMware, Active Directory, pfSense, Veeam, Cloud, Oracle DBA, Shell Script, ERP">
 
-    <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGP79GKYG0"></script>
-   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGP79GKYG0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-   gtag('config', 'G-MGP79GKYG0');
-   </script>
+        gtag('config', 'G-MGP79GKYG0');
+    </script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
@@ -27,10 +26,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4 custom-welcome-modal">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <i class="bi bi-hand-thumbs-up-fill text-info display-4"></i>
+                    </div>
+                    <h4 class="modal-title fw-bold text-white mb-3" id="welcomeModalLabel">Olá! Seja muito bem-vindo(a) ao meu portfólio! 👋</h4>
+                    <p class="text-light mb-4" style="font-size: 1.05rem; line-height: 1.6;">
+                        Aqui você encontrará detalhes sobre minha trajetória profissional, minhas competências em Infraestrutura de TI, Redes, Cloud, Automação e alguns dos projetos que desenvolvi.
+                    </p>
+                    <button type="button" class="btn btn-primary px-4 py-2 fw-bold" id="btnCloseWelcome" data-bs-dismiss="modal" style="background: var(--gradient-secondary); border: none; border-radius: 8px;">
+                        Explorar Portfólio <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">João Vitor</a>
@@ -62,35 +79,38 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero" style="position: relative;">
+        <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 0; pointer-events: none;"></div>
+
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <h1 class="hero-title">João Vitor Mayolli Alves</h1>
-                    <p class="hero-subtitle">Analista de Infraestrutura de TI | Linux | Windows Server | Redes | Cloud</p>
-                    <p class="mb-4">Mais de 8 anos administrando ambientes corporativos de TI — servidores, redes,
-                        virtualização, segurança e automação — com atuação complementar em desenvolvimento Web.</p>
+                    <p class="hero-subtitle">Analista de Infraestrutura e Sistemas | Linux · Windows Server · Redes · Segurança · Cloud</p>
+                    <p class="mb-4">Especialista com vasta experiência na sustentação, automação e arquitetura de ambientes corporativos híbridos, integração de sistemas ERP e bancos de dados.</p>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="#projects" class="btn btn-primary-custom">
                             <i class="bi bi-code-slash me-2"></i>Ver Projetos
                         </a>
-                        <a href="curriculo.pdf" download class="btn btn-outline-custom">
-                            <i class="bi bi-download me-2"></i>Download CV
+                        <a href="#contact" class="btn btn-outline-custom">
+                            <i class="bi bi-envelope-fill me-2"></i>Entrar em Contato
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center" data-aos="fade-left">
-                    <img src="img/perfil.jpg" alt="João Vitor" class="profile-img floating">
+                    <img src="img/perfil.jpg" alt="João Vitor Mayolli Alves" class="profile-img floating"
+                        onerror="this.src='https://via.placeholder.com/200?text=JVMA'">
                     <div class="mt-4">
                         <div class="d-flex justify-content-center gap-3">
-                            <a href="mailto:joaomayolli@icloud.com" class="text-decoration-none">
+                            <a href="mailto:joao_mayolli@hotmail.com" class="text-decoration-none" title="E-mail">
                                 <i class="bi bi-envelope-fill fs-3 text-info"></i>
                             </a>
-                            <a href="tel:+5518996529725" class="text-decoration-none">
-                                <i class="bi bi-telephone-fill fs-3 text-info"></i>
+                            <a href="https://linkedin.com/in/joao-vitor-mayolli-alves-807b55287" target="_blank"
+                                class="text-decoration-none" title="LinkedIn">
+                                <i class="bi bi-linkedin fs-3 text-info"></i>
                             </a>
-                            <a href="https://site.itcloudsolutions.com.br/" target="_blank"
-                                class="text-decoration-none">
+                            <a href="https://itcloudsolutions.com.br" target="_blank" class="text-decoration-none"
+                                title="Portfólio">
                                 <i class="bi bi-globe fs-3 text-info"></i>
                             </a>
                         </div>
@@ -105,30 +125,44 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-4 fw-bold mb-4">Sobre Mim</h2>
-                    <p class="lead">Analista de Infraestrutura de TI com visão integrada entre sistemas, redes e desenvolvimento</p>
+                    <p class="lead">Visão integrada entre Infraestrutura, Redes, Segurança, Bancos de Dados e Desenvolvimento</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <div class="card-custom p-5" data-aos="fade-up">
                         <p class="fs-5 mb-4">
-                            Sou <strong class="text-info">Analista de Infraestrutura de TI</strong> com mais de 8 anos de
-                            experiência em ambientes corporativos, atuando na administração, sustentação e
-                            troubleshooting de servidores Linux e Windows Server, Active Directory, redes,
-                            virtualização, VPNs, firewalls, backup e segurança de infraestrutura.
+                            Sou <strong class="text-info">Analista de Infraestrutura e Sistemas</strong> focado na
+                            administração de ambientes corporativos complexos. Minha atuação combina forte bagagem em
+                            servidores Linux e Windows Server, Active Directory, redes, virtualização, VPNs, firewalls,
+                            rotinas de backup e segurança.
                         </p>
                         <p class="mb-4">
-                            Tenho experiência com <strong class="text-info">VMware vSphere e Hyper-V</strong>,
-                            gestão de firewalls pfSense e Sophos, VPNs IPsec e OpenVPN, rotinas de backup com
-                            Veeam Backup & Replication, e resolução de incidentes N1, N2 e N3, além de automação
-                            de tarefas operacionais com Shell Script.
+                            Na <strong class="text-info">Oliver Solutions</strong>, estruturei e assumi integralmente a
+                            área de TI antes terceirizada, reimplantando sistemas ERP, criando contingências de rede
+                            (fibra e elétrica) e desenvolvendo automações que reduziram chamados e evitaram custos
+                            adicionais.
                         </p>
-                        <p class="mb-0">
-                            Minha experiência em sistemas e desenvolvimento complementa minha atuação em
-                            infraestrutura: possuo conhecimentos em bancos de dados <strong class="text-info">Oracle
-                                e MySQL</strong> e desenvolvimento Front-End com JavaScript, HTML e CSS, o que me
-                            permite atuar na integração entre infraestrutura, sistemas, aplicações e automações.
+                        <p class="mb-4">
+                            Cursando <strong class="text-info">Graduação em Análise e Desenvolvimento de Sistemas
+                                (UniCesumar)</strong>, possuo capacidade diferenciada para investigar incidentes
+                            multicausais navegando desde o banco de dados (Oracle/MySQL) até as camadas de rede e
+                            aplicação.
                         </p>
+                        <div class="row text-center mt-4 pt-3 border-top border-secondary">
+                            <div class="col-md-4">
+                                <h5 class="text-info mb-1">Localização</h5>
+                                <p class="text-muted">Cuiabá / MT - Brasil</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="text-info mb-1">E-mail</h5>
+                                <p class="text-muted">joao_mayolli@hotmail.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="text-info mb-1">Telefone</h5>
+                                <p class="text-muted">+55 18 99652-9725</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,7 +174,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-4 fw-bold mb-4">Habilidades Técnicas</h2>
-                    <p class="lead">Tecnologias e ferramentas que domino</p>
+                    <p class="lead">Tecnologias e ferramentas aplicadas na sustentação e automação de TI</p>
                 </div>
             </div>
 
@@ -150,45 +184,45 @@
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('Linux & Windows Server', 'img/linux-logo.png', 'Administração de servidores Linux (Debian, CentOS, Oracle Linux, Ubuntu) e Windows Server 2012/2016/2019, incluindo Active Directory, GPO, DNS e DHCP.')">
+                        onclick="setModalContent('Linux & Windows Server', 'img/linux-logo.png', 'Administração de servidores Linux (Debian, CentOS, Oracle Linux, Ubuntu) e Windows Server (2012/2016/2019), incluindo Active Directory (AD DS), GPO, DNS, DHCP e IIS.')">
                         <i class="bi bi-hdd-rack skill-icon"></i>
                         <h5>Linux / Windows Server</h5>
-                        <p>AD, GPO, DNS, DHCP</p>
+                        <p>AD DS, GPO, DNS, DHCP</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('Virtualização', 'img/vmware-logo.png', 'Experiência com VMware vSphere, Hyper-V e Proxmox para provisionamento e gestão de ambientes virtualizados corporativos.')">
+                        onclick="setModalContent('Virtualização & DB', 'img/vmware-logo.png', 'Gestão de virtualização com VMware vSphere e Hyper-V. Administração de bancos de dados Oracle DB e MySQL em ambiente produtivo.')">
                         <i class="bi bi-diagram-3 skill-icon"></i>
-                        <h5>Virtualização</h5>
-                        <p>VMware, Hyper-V, Proxmox</p>
+                        <h5>Virtualização & DB</h5>
+                        <p>VMware, Hyper-V, Oracle, MySQL</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('Redes & Segurança', 'img/pfsense-logo.png', 'Redes TCP/IP, VLAN, switching e roteamento. Gestão de firewalls pfSense e Sophos, VPNs IPsec e OpenVPN, hardening de servidores.')">
+                        onclick="setModalContent('Redes & Segurança', 'img/pfsense-logo.png', 'Arquitetura de redes TCP/IP, VLAN, switching e roteamento. Gestão avançada de firewalls pfSense e Sophos, VPNs IPsec e OpenVPN.')">
                         <i class="bi bi-shield-lock skill-icon"></i>
                         <h5>Redes & Segurança</h5>
-                        <p>pfSense, Sophos, VPN</p>
+                        <p>pfSense, Sophos, IPsec/OpenVPN</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('Backup & Automação', 'img/veeam-logo.png', 'Implementação e gestão de rotinas de backup com Veeam Backup & Replication, e automação de tarefas operacionais com Shell Script (Bash).')">
+                        onclick="setModalContent('Backup & Automação', 'img/veeam-logo.png', 'Implementação e gestão de rotinas de backup com Veeam Backup & Replication e Cobian. Automação de tarefas de rotina com Shell Script (Bash).')">
                         <i class="bi bi-cloud-arrow-up skill-icon"></i>
                         <h5>Backup & Automação</h5>
-                        <p>Veeam, Shell Script</p>
+                        <p>Veeam, Cobian, Shell Script</p>
                     </div>
                 </div>
             </div>
 
             <div class="row mb-5">
                 <div class="col-lg-12 mb-4" data-aos="fade-up">
-                    <h3 class="text-center mb-4 text-info">Desenvolvimento Front-end</h3>
+                    <h3 class="text-center mb-4 text-info">Desenvolvimento & Web</h3>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('JavaScript', 'img/javascript-logo.png', 'Linguagem de programação versátil e poderosa. Domino ES6+, manipulação do DOM, APIs REST, programação assíncrona e muito mais.')">
+                        onclick="setModalContent('JavaScript', 'img/javascript-logo.png', 'Desenvolvimento Front-End moderno utilizando JavaScript ES6+, manipulação de DOM e integração de rotinas web.')">
                         <i class="bi bi-code-slash skill-icon"></i>
                         <h5>JavaScript</h5>
                         <p>ES6+, DOM, APIs</p>
@@ -196,25 +230,25 @@
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('CSS3', 'img/css-logo.png', 'Estilização avançada com CSS3. Uso Flexbox, Grid, animações, responsividade e técnicas modernas de layout.')">
+                        onclick="setModalContent('HTML5 & CSS3', 'img/css-logo.png', 'Criação de layouts modernos e responsivos utilizando HTML5, CSS3, Flexbox e Grid.')">
                         <i class="bi bi-filetype-css skill-icon"></i>
-                        <h5>CSS3</h5>
-                        <p>Flexbox, Grid, Animations</p>
+                        <h5>HTML5 & CSS3</h5>
+                        <p>Flexbox, Grid, Responsivo</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('Bootstrap', 'img/bootstrap-logo.png', 'Framework CSS para desenvolvimento rápido e responsivo. Experiência em customização e criação de componentes.')">
+                        onclick="setModalContent('Bootstrap 5', 'img/bootstrap-logo.png', 'Agilidade no desenvolvimento de interfaces responsivas com customização do Bootstrap 5.')">
                         <i class="bi bi-bootstrap skill-icon"></i>
-                        <h5>Bootstrap</h5>
-                        <p>Responsive Design</p>
+                        <h5>Bootstrap 5</h5>
+                        <p>UI Design Responsivo</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="skill-item" data-bs-toggle="modal" data-bs-target="#skillModal"
-                        onclick="setModalContent('Git/GitHub', 'img/git-logo.png', 'Controle de versão e colaboração em projetos. Experiência com branches, merges, pull requests e workflows de desenvolvimento.')">
+                        onclick="setModalContent('Git & Repositórios', 'img/git-logo.png', 'Controle de versão e gestão de código-fonte para scripts de automação e projetos web.')">
                         <i class="bi bi-git skill-icon"></i>
-                        <h5>Git/GitHub</h5>
+                        <h5>Git / GitHub</h5>
                         <p>Controle de Versão</p>
                     </div>
                 </div>
@@ -222,36 +256,26 @@
 
             <div class="row">
                 <div class="col-lg-12 mb-4" data-aos="fade-up">
-                    <h3 class="text-center mb-4 text-info">Stack Tecnológico</h3>
+                    <h3 class="text-center mb-4 text-info">Competências & Stack</h3>
                 </div>
                 <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <div class="tech-item">HTML5</div>
-                    <div class="tech-item">CSS3</div>
-                    <div class="tech-item">JavaScript</div>
-                    <div class="tech-item">React</div>
-                    <div class="tech-item">Vue.js</div>
-                    <div class="tech-item">Bootstrap</div>
-                    <div class="tech-item">Node.js</div>
-                    <div class="tech-item">MySQL</div>
-                    <div class="tech-item">Oracle</div>
-                    <div class="tech-item">Linux</div>
-                    <div class="tech-item">Windows Server</div>
-                    <div class="tech-item">Sophos</div>
-                    <div class="tech-item">PfSense</div>
-                    <div class="tech-item">AD</div>
-                    <div class="tech-item">Help Desk</div>
-                    <div class="tech-item">Vlan</div>
-                    <div class="tech-item">TCP/IP</div>
-                    <div class="tech-item">Infraestrutura</div>
-                    <div class="tech-item">VMware</div>
-                    <div class="tech-item">Hyper V</div>
-                    <div class="tech-item">Proxmox</div>
+                    <div class="tech-item">Linux (Debian/CentOS/Oracle Linux/Ubuntu)</div>
+                    <div class="tech-item">Windows Server (2012/2016/2019)</div>
+                    <div class="tech-item">Active Directory (AD DS / GPO)</div>
+                    <div class="tech-item">DNS / DHCP / IIS</div>
+                    <div class="tech-item">VMware vSphere</div>
+                    <div class="tech-item">Hyper-V</div>
+                    <div class="tech-item">pfSense / Sophos Firewall</div>
                     <div class="tech-item">OpenVPN / IPsec</div>
-                    <div class="tech-item">Veeam Backup</div>
-                    <div class="tech-item">Shell Script</div>
-                    <div class="tech-item">Git</div>
-                    <div class="tech-item">GitHub</div>
-                    <div class="tech-item">Apache</div>
+                    <div class="tech-item">Veeam Backup & Replication</div>
+                    <div class="tech-item">Cobian Backup</div>
+                    <div class="tech-item">Shell Script (Bash)</div>
+                    <div class="tech-item">Oracle DB</div>
+                    <div class="tech-item">MySQL</div>
+                    <div class="tech-item">CSERP / ERP Sustentação</div>
+                    <div class="tech-item">Office 365 / VoIP</div>
+                    <div class="tech-item">JavaScript / HTML / CSS</div>
+                    <div class="tech-item">Troubleshooting N1/N2/N3</div>
                 </div>
             </div>
         </div>
@@ -261,8 +285,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-4 fw-bold mb-4">Projetos</h2>
-                    <p class="lead">Alguns dos meus trabalhos mais recentes</p>
+                    <h2 class="display-4 fw-bold mb-4">Projetos & Destaques</h2>
+                    <p class="lead">Iniciativas em infraestrutura corporativa, automação e desenvolvimento web</p>
                 </div>
             </div>
             <div class="row">
@@ -270,17 +294,16 @@
                     <div class="project-card">
                         <div class="p-4">
                             <h5 class="fw-bold mb-3">IT Cloud Solutions</h5>
-                            <p class="mb-3">Site corporativo desenvolvido para minha empresa de soluções em TI. Layout
-                                moderno, responsivo e focado na experiência do usuário.</p>
+                            <p class="mb-3">Plataforma web profissional voltada para a divulgação e apresentação de soluções em TI, infraestrutura de redes e consultoria corporativa.</p>
                             <div class="mb-3">
                                 <span class="tech-item">HTML5</span>
                                 <span class="tech-item">CSS3</span>
                                 <span class="tech-item">JavaScript</span>
                                 <span class="tech-item">Bootstrap</span>
                             </div>
-                            <a href="https://site.itcloudsolutions.com.br/" target="_blank"
+                            <a href="https://site.itcloudsolutions.com.br" target="_blank"
                                 class="btn btn-outline-custom btn-sm">
-                                <i class="bi bi-eye me-2"></i>Ver Projeto
+                                <i class="bi bi-eye me-2"></i>Acessar Portfólio
                             </a>
                         </div>
                     </div>
@@ -288,14 +311,13 @@
                 <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-card">
                         <div class="p-4">
-                            <h5 class="fw-bold mb-3">Customizações GLPI</h5>
-                            <p class="mb-3">Desenvolvimento de customizações e automações para sistemas de help desk
-                                GLPI, melhorando a experiência do usuário e produtividade.</p>
+                            <h5 class="fw-bold mb-3">Automação de Backup & Hardening</h5>
+                            <p class="mb-3">Desenvolvimento de rotinas automatizadas via Shell Script (Bash) para backups de bases de dados, monitoramento de conectividade e aplicando hardening em servidores.</p>
                             <div class="mb-3">
-                                <span class="tech-item">PHP</span>
-                                <span class="tech-item">MySQL</span>
-                                <span class="tech-item">JavaScript</span>
-                                <span class="tech-item">CSS3</span>
+                                <span class="tech-item">Shell Script</span>
+                                <span class="tech-item">Linux</span>
+                                <span class="tech-item">pfSense</span>
+                                <span class="tech-item">Veeam</span>
                             </div>
                             <span class="btn btn-outline-secondary btn-sm disabled">
                                 <i class="bi bi-lock me-2"></i>Projeto Corporativo
@@ -312,7 +334,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-4 fw-bold mb-4">Experiência Profissional</h2>
-                    <p class="lead">Minha jornada profissional em tecnologia</p>
+                    <p class="lead">Trajetória sólida em infraestrutura, redes, segurança e suporte corporativo</p>
                 </div>
             </div>
             <div class="row">
@@ -320,32 +342,149 @@
                     <div class="timeline" data-aos="fade-up">
                         <div class="timeline-item">
                             <div class="card-custom p-4">
-                                <h5 class="fw-bold text-info">Analista de TI</h5>
-                                <h6 class="text-muted">OLIVER SOLUTIONS LTDA</h6>
-                                <p class="text-muted mb-2">08/2023 – 05/2025</p>
-                                <p>Administração de servidores Linux e Windows, gestão de Active Directory (AD DS),
-                                    DNS, DHCP e GPO. Gestão de firewalls pfSense e Sophos (VPNs IPsec e OpenVPN),
-                                    rotinas de backup com Veeam e resolução de incidentes críticos N1, N2 e N3.</p>
+                                <h5 class="fw-bold text-info mb-1">Consultor & Prestador de Serviços em TI</h5>
+                                <h6 class="text-white fw-bold mb-1">ATUAÇÃO AUTÔNOMA</h6>
+                                <p class="text-muted mb-3"><small>04/2025 – Presente</small></p>
+
+                                <p class="mb-4">
+                                    Após minha mudança para Mato Grosso, passei a realizar atendimentos técnicos pontuais como profissional autônomo, preservando minha atuação em Tecnologia e o contato com demandas reais de infraestrutura e suporte.
+                                </p>
+
+                                <h6 class="fw-bold text-white mb-2">Principais Contribuições</h6>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Suporte técnico:</strong> atendimento a demandas de equipamentos, sistemas operacionais, softwares e conectividade.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Diagnóstico de falhas:</strong> investigação de problemas e execução de intervenções compatíveis com cada necessidade.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Configuração de ambientes:</strong> instalação, ajuste e manutenção de recursos tecnológicos para usuários.
+                                    </li>
+                                </ul>
+
+                                <p class="mb-0 fst-italic text-muted border-top border-secondary pt-3">
+                                    A atuação autônoma preservou minha proximidade com demandas técnicas e reforçou a adaptação dos conhecimentos de infraestrutura e suporte a diferentes contextos.
+                                </p>
                             </div>
                         </div>
+
                         <div class="timeline-item">
                             <div class="card-custom p-4">
-                                <h5 class="fw-bold text-info">Analista de Sistemas Jr</h5>
-                                <h6 class="text-muted">IBÉRIA INDUSTRIAL E COMERCIAL LTDA</h6>
-                                <p class="text-muted mb-2">04/2021 – 08/2023</p>
-                                <p>Administração de bancos de dados Oracle e MySQL em ambiente produtivo, suporte
-                                    especializado à infraestrutura corporativa e criação de scripts para automação
-                                    de tarefas operacionais e rotinas administrativas.</p>
+                                <h5 class="fw-bold text-info mb-1">Analista de TI (Infraestrutura e Sustentação)</h5>
+                                <h6 class="text-white fw-bold mb-1">OLIVER SOLUTIONS LTDA</h6>
+                                <p class="text-muted mb-3"><small>08/2023 – 05/2025</small></p>
+
+                                <p class="mb-4">
+                                    Assumi a responsabilidade pela função de Tecnologia em um momento no qual a empresa dependia de atendimento terceirizado. Minha missão foi constituir uma estrutura interna capaz de administrar o ambiente, ampliar o acesso dos colaboradores ao suporte e sustentar sistemas críticos. Reportando-me diretamente à direção, conduzi a implantação de servidores, serviços e controles, reimplantei o CSERP e atendi áreas como RH, Departamento Pessoal, Segurança, Automotivo, Almoxarifado, Financeiro, Fiscal, Agrícola e Contábil. As demandas inicialmente acordadas foram concluídas dentro do prazo.
+                                </p>
+
+                                <h6 class="fw-bold text-white mb-2">Principais Contribuições</h6>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Internalização da TI:</strong> organização de uma função própria de Tecnologia, reduzindo a dependência do suporte terceirizado e aproximando o atendimento das necessidades da operação.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Administração integrada:</strong> sustentação de Linux e Windows Server, Active Directory, GPO, DNS, DHCP, VMware, pfSense, VPN IPsec/OpenVPN, backups e telefonia VoIP.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Reimplantação do ERP:</strong> configuração, suporte e treinamento no CSERP web e desktop para usuários de diferentes departamentos, organizando acessos e continuidade do sistema.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Automação de processos:</strong> criação de aplicações personalizadas para substituir atividades manuais e papéis, fortalecer a segurança das informações e evitar custos adicionais.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Gestão de incidentes:</strong> monitoramento e troubleshooting N1, N2 e N3, incluindo a resolução de uma falha crítica de banco de dados que ameaçava interromper a empresa.
+                                    </li>
+                                </ul>
+
+                                <p class="mb-0 fst-italic text-muted border-top border-secondary pt-3">
+                                    Essa experiência consolidou minha capacidade de observar a Tecnologia como um ambiente interdependente. Deixei de administrar apenas componentes e passei a responder pela relação entre estrutura técnica, sistemas, usuários e continuidade operacional.
+                                </p>
                             </div>
                         </div>
+
                         <div class="timeline-item">
                             <div class="card-custom p-4">
-                                <h5 class="fw-bold text-info">Técnico em Infraestrutura I</h5>
-                                <h6 class="text-muted">CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</h6>
-                                <p class="text-muted mb-2">04/2020 – 04/2021</p>
-                                <p>Instalação, configuração e manutenção preventiva e corretiva de servidores e
-                                    redes virtuais e físicas. Atendimento e suporte técnico a sistemas empresariais
-                                    ERP.</p>
+                                <h5 class="fw-bold text-info mb-1">Analista de Sistemas Jr</h5>
+                                <h6 class="text-white fw-bold mb-1">IBÉRIA INDUSTRIAL E COMERCIAL LTDA</h6>
+                                <p class="text-muted mb-3"><small>04/2021 – 08/2023</small></p>
+
+                                <p class="mb-4">
+                                    Atuei na sustentação da infraestrutura corporativa e do ERP, aproximando servidores, redes, bancos de dados e necessidades dos usuários. Administrei Oracle e MySQL em produção, acompanhei chamados, apliquei releases e correções, organizei usuários e permissões e mantive servidores físicos e virtuais. O trabalho exigia interlocução com diferentes setores e investigação de incidentes que podiam envolver mais de uma camada do ambiente.
+                                </p>
+
+                                <h6 class="fw-bold text-white mb-2">Principais Contribuições</h6>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Sustentação do ERP:</strong> administração de usuários, acessos, telas, releases e correções, apoiando a continuidade dos processos corporativos.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Segurança da rede:</strong> implantação de firewall integrado ao domínio e aplicação de controles voltados à proteção da rede.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Resiliência do ambiente:</strong> instalação de gerador e banco de baterias para a sala de servidores, fortalecendo a continuidade diante de falhas de energia.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Conectividade corporativa:</strong> coordenação de equipe terceirizada na implantação de fibra óptica em anel ao redor da empresa.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Automação operacional:</strong> criação de scripts Bash para rotinas administrativas e apoio à gestão de incidentes.
+                                    </li>
+                                </ul>
+
+                                <p class="mb-0 fst-italic text-muted border-top border-secondary pt-3">
+                                    A experiência demonstrou que a disponibilidade dos sistemas depende de decisões coordenadas em energia, rede, segurança, servidores, banco de dados e acesso. Essa visão preparou minha transição para a responsabilidade integral por um setor de Tecnologia.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="card-custom p-4">
+                                <h5 class="fw-bold text-info mb-1">Técnico em Infraestrutura I</h5>
+                                <h6 class="text-white fw-bold mb-1">CS TREINAMENTO E INSTALAÇÃO DE SOFTWARE LTDA</h6>
+                                <p class="text-muted mb-3"><small>04/2020 – 04/2021</small></p>
+
+                                <p class="mb-4">
+                                    Administrei a infraestrutura interna e prestei suporte aos ambientes de clientes do sistema CS Compusoft na área de TI. Realizei instalação, configuração e manutenção de servidores e redes físicas e virtuais, com atuação em Windows Server, Linux, Oracle Linux, banco de dados Oracle, Active Directory, VMware, Sophos, Veeam e hardening. Também apoiei integrações e a atualização de certificados digitais utilizados em processos fiscais.
+                                </p>
+
+                                <h6 class="fw-bold text-white mb-2">Principais Contribuições</h6>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Acesso remoto para clientes:</strong> participação na criação de uma oferta com TSPlus, permitindo que empresas menores utilizassem remotamente sistemas e bancos hospedados na sede mediante mensalidade.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Ambientes de teste:</strong> organização de bases específicas para validação antes de intervenções em produção, contribuindo para reduzir o tempo de chamados.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Sustentação multicliente:</strong> manutenção preventiva e corretiva de servidores, redes e bancos de dados em contextos operacionais distintos.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                        <strong>Segurança e continuidade:</strong> aplicação de hardening, rotinas de backup e troubleshooting em ambientes corporativos.
+                                    </li>
+                                </ul>
+
+                                <p class="mb-0 fst-italic text-muted border-top border-secondary pt-3">
+                                    A convivência com diferentes clientes ensinou que uma operação técnica não pode ser administrada de forma padronizada sem considerar o sistema, o usuário e a realidade de cada negócio. Essa base preparou minha atuação posterior em ambiente corporativo interno.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -359,7 +498,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-4 fw-bold mb-4">Entre em Contato</h2>
-                    <p class="lead">Vamos conversar sobre seu próximo projeto</p>
+                    <p class="lead">Estou à disposição para novas oportunidades e parcerias em TI</p>
                 </div>
             </div>
             <div class="row">
@@ -369,38 +508,38 @@
                             <div class="contact-item">
                                 <i class="bi bi-envelope-fill contact-icon"></i>
                                 <div>
-                                    <h6 class="fw-bold mb-1">Email</h6>
-                                    <a href="mailto:joaomayolli@icloud.com"
+                                    <h6 class="fw-bold mb-1">E-mail</h6>
+                                    <a href="mailto:joao_mayolli@hotmail.com"
                                         class="text-decoration-none text-light">joao_mayolli@hotmail.com</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="contact-item">
-                                <i class="bi bi-telephone-fill contact-icon"></i>
+                                <i class="bi bi-linkedin contact-icon"></i>
                                 <div>
-                                    <h6 class="fw-bold mb-1">Telefone</h6>
-                                    <a href="tel:+5518996529725" class="text-decoration-none text-light">(18)
-                                        99652-9725</a>
+                                    <h6 class="fw-bold mb-1">LinkedIn</h6>
+                                    <a href="https://linkedin.com/in/joao-vitor-mayolli-alves-807b55287" target="_blank"
+                                        class="text-decoration-none text-light">in/joao-vitor-mayolli-alves</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                             <div class="contact-item">
-                                <i class="bi bi-geo-alt-fill contact-icon"></i>
+                                <i class="bi bi-telephone-fill contact-icon"></i>
                                 <div>
-                                    <h6 class="fw-bold mb-1">Localização</h6>
-                                    <span>Porto dos Gaúchos, MT</span>
+                                    <h6 class="fw-bold mb-1">Telefone / WhatsApp</h6>
+                                    <a href="https://wa.me/5518996529725" target="_blank"
+                                        class="text-decoration-none text-light">+55 (18) 99652-9725</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                             <div class="contact-item">
-                                <i class="bi bi-globe contact-icon"></i>
+                                <i class="bi bi-geo-alt-fill contact-icon"></i>
                                 <div>
-                                    <h6 class="fw-bold mb-1">Website</h6>
-                                    <a href="https://site.itcloudsolutions.com.br/" target="_blank"
-                                        class="text-decoration-none text-light">itcloudsolutions.com.br</a>
+                                    <h6 class="fw-bold mb-1">Localização</h6>
+                                    <span>Cuiabá – MT, Brasil</span>
                                 </div>
                             </div>
                         </div>
@@ -414,35 +553,38 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; 2025 João Vitor Mayolli Alves. Todos os direitos reservados.</p>
+                    <p class="mb-0">&copy; 2026 It Cloud Solutions. Todos os direitos reservados.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0">Desenvolvido com 💙 e muito ☕</p>
+                    <p class="mb-0">Desenvolvido por João Vitor Mayolli Alves</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="modal fade" id="skillModal" tabindex="-1" aria-labelledby="skillModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="skillModalLabel">Skill</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-4 custom-welcome-modal">
+            <div class="modal-body">
+                <div class="mb-3">
+                    <i class="bi bi-hand-thumbs-up-fill text-info display-4"></i>
                 </div>
-                <div class="modal-body text-center">
-                    <img id="modalSkillImage" src="" alt="" class="img-fluid rounded mb-3" style="max-height: 300px;">
-                    <h4 id="modalSkillTitle" class="text-info mb-3"></h4>
-                    <p id="modalSkillDescription" class="lead"></p>
-                </div>
+                <h4 class="modal-title fw-bold text-white mb-3" id="welcomeModalLabel">Olá! Seja muito bem-vindo(a) ao meu portfólio! 👋</h4>
+                <p class="text-light mb-4" style="font-size: 1.05rem; line-height: 1.6;">
+                    Aqui você encontrará detalhes sobre minha trajetória profissional, minhas competências em Infraestrutura de TI, Redes, Cloud, Automação e alguns dos projetos que desenvolvi.
+                </p>
+                <button type="button" class="btn btn-primary px-4 py-2 fw-bold" id="btnCloseWelcome" data-bs-dismiss="modal" style="background: var(--gradient-secondary); border: none; border-radius: 8px;">
+                    Explorar Portfólio <i class="bi bi-arrow-right ms-1"></i>
+                </button>
             </div>
         </div>
     </div>
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 
 </html>
